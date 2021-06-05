@@ -9,19 +9,19 @@
 <body>
     <h1>Registration form</h1>
     <hr>
-    <form action="#" class="registration">
+    <form action="#">
         <table>
             <tr>
                 <td>Full name:</td>
-                <td><input type="text"  class="fname"></td>
+                <td><input type="text"></td>
             </tr>
             <tr>
                 <td>Email:</td>
-                <td><input type="email" class="email"></td>
+                <td><input type="email"></td>
             </tr>
             <tr>
                 <td>Password:</td>
-                <td><input type="password" class="password"></td>
+                <td><input type="password"></td>
             </tr>
             <tr>
                 <td>Comments:</td>
@@ -30,11 +30,11 @@
             <tr>
                 <td>Gender:</td>
                 <td>
-                    <input type="radio" id="male" name="selection" value="male">
+                    <input type="radio" id="male" name="selection">
                     <label for="male">Male</label>
-                    <input type="radio" id="female" name="selection" value="female">
+                    <input type="radio" id="female" name="selection">
                     <label for="female">Female</label>
-                    <input type="radio" id="Others" name="selection" value="Others">
+                    <input type="radio" id="Others" name="selection">
                     <label for="Others">Others</label>
                 </td>
             </tr>
