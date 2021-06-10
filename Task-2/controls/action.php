@@ -1,21 +1,56 @@
 <?php 
+
     $fName_valid_msg = "";
     $email_valid_msg = "";
-    // Checking whether request method is post.
-    if($_SERVER['REQUEST_METHOD'] == "POST"){
+    $password_valid_msg = "";
+    $comment_valid_msg = "";
+    $gender_valid_msg = "";
+    $hobbies_valid_msg = "";
+
+    // Checking whether form 1 is submitted.
+    if(isset($_POST['btn-form-1'])){
+
+        $fname = $_REQUEST['fName'];
+        $email = $_REQUEST['email'];
+        $password = $_REQUEST['password'];
+        $comment = $_REQUEST['comments'];     
+         
+
         // Checking validity of name.
-        if(empty($_REQUEST['fName'])){
+        if(empty($fname)){
             $fName_valid_msg = "* Name is missing";
-        }else if(strlen($_REQUEST['fName'])<5){
+        }else if(strlen($fname)<5){
             $fName_valid_msg = "* Name must be minimum 5 characters long";
         }
+
         // Checking validity of email.
-        if(empty($_REQUEST['email'])){
+        if(empty($email)){
             $email_valid_msg = "* Email is missing";
-        }else if(!preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix",$_REQUEST['email'])){
+        }else if(!preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix",$email)){
             $email_valid_msg = "* Invalid email";
         }
-        // Radio validation tbc->...
+
+        // Checking validity of password.
+        if(empty($password)){
+            $password_valid_msg = "* Password is missing";
+        }else if(strlen($password)<8){
+            $password_valid_msg = "* Weak password";
+        }
+
+        // Checking validity of comments.
+        if(empty($comment) || strlen($comment)<5){
+            $comment_valid_msg = "* Invalid comment.";
+        }
+
+        // Checking validity of gender.
+        if(! isset($_REQUEST['selection'])){
+            $gender_valid_msg = "* Gender is missing.";
+        }
+
+        // Checking validity of hobbies.
+        if(!isset($_REQUEST['singing']) && !isset($_REQUEST['dancing']) && !isset($_REQUEST['reading'])){
+            $hobbies_valid_msg = "* Select at least one hobby.";
+        }
     }
 
 ?>
