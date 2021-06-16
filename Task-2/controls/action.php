@@ -51,6 +51,16 @@
         if(!isset($_REQUEST['singing']) && !isset($_REQUEST['dancing']) && !isset($_REQUEST['reading'])){
             $hobbies_valid_msg = "* Select at least one hobby.";
         }
+
+        // Uploading files.
+        $target_file = "files/".$_FILES["fileToUpload"]["name"];
+        if(move_uploaded_file($_FILES["fileToUpload"]["tmp_name"],$target_file)){
+            echo "File uploaded<br/>";
+            echo "<img src='".$target_file."'>";
+        }else{
+            echo "File could not be uploaded";
+        }
     }
 
+   
 ?>

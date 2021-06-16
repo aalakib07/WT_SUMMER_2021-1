@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Registration form</h1><hr>
-    <form action="#" method="post">
+    <form action="#" method="post" enctype="multipart/form-data">
         <table>
             <tr>
                 <td>Full Name:</td>
@@ -60,7 +60,10 @@
                 <td><?= $hobbies_valid_msg ?></td>
             </tr>
             <tr>
-            <td></td>
+                <td> <label for="file">Please choose a file:</label></td>
+               <td><input type="file" id="file" name="fileToUpload"></td>
+            </tr>
+            <tr>
                 <td>
                     <input type="submit" value="Submit" name="btn-form-1">
                     <input type="reset" value="Reset">
