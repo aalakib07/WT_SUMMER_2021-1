@@ -37,11 +37,11 @@
             <tr>
                 <td>Gender:</td>
                 <td>
-                    <input type="radio" name="selection" id="male">
+                    <input type="radio" name="selection" value="male" id="male">
                     <label for="male">Male</label>
-                    <input type="radio" name="selection" id="female">
+                    <input type="radio" name="selection" value="female" id="female">
                     <label for="female">Female</label>
-                    <input type="radio" name="selection" id="others">
+                    <input type="radio" name="selection" value="others" id="others">
                     <label for="others">Others</label>
                 </td>
                 <td><?= $gender_error ?></td>
@@ -49,11 +49,11 @@
             <tr>
                 <td>Hobbies:</td>
                 <td>
-                    <input type="checkbox" name="singing" id="singing">
+                    <input type="checkbox" name="singing" value="Singing" id="singing">
                     <label for="singing">Singing</label>
-                    <input type="checkbox" name="dancing" id="dancing">
+                    <input type="checkbox" name="dancing" value="Dancing" id="dancing">
                     <label for="dancing">Dancing</label>
-                    <input type="checkbox" name="reading" id="reading">
+                    <input type="checkbox" name="reading" value="Reading" id="reading">
                     <label for="reading">Reading</label>
                 </td>
                 <td><?=$hobby_error?></td>
