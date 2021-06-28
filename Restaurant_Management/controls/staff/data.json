@@ -1,0 +1,38 @@
+[
+    {
+        "Full name": "Shahed Chowdhury Omi",
+        "Email": "abc@gmail.com",
+        "Password": "qwertyuiop",
+        "Gender": "Male",
+        "Designation": "Manager",
+        "Favorite foods": [
+            "chinese",
+            "fast-food"
+        ],
+        "Image-location": "..\/..\/uploads\/stuff\/php.jpg"
+    },
+    {
+        "Full name": "Ariful Islam",
+        "Email": "def@gmail.com",
+        "Password": "qazwsxedc",
+        "Gender": "Male",
+        "Designation": "Chef",
+        "Favorite foods": [
+            "chinese"
+        ],
+        "Image-location": "..\/..\/uploads\/stuff\/java.png"
+    },
+    {
+        "Full name": "Afra Nawar",
+        "Email": "ghi@gmail.com",
+        "Password": "asdfghjkl",
+        "Gender": "Female",
+        "Designation": "Waiter",
+        "Favorite foods": [
+            "chinese",
+            "local",
+            "fast-food"
+        ],
+        "Image-location": "..\/..\/uploads\/stuff\/python.png"
+    }
+]
