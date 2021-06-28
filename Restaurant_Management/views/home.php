@@ -17,8 +17,8 @@
             <td><a href="customer/index.php">Enter</a></td>
         </tr>
         <tr>
-            <td>Stuff Page</td>
-            <td><a href="stuff/index.php">Enter</a></td>
+            <td>Staff Page</td>
+            <td><a href="staff/login.php">Enter</a></td>
         </tr>
         <tr>
             <td>Supplier Page</td>
