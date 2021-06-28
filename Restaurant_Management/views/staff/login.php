@@ -1,11 +1,5 @@
 <?php
-
-    session_start();
-    $success_msg = isset($_SESSION['success-msg']) == 1 ? $_SESSION['success-msg'] : '';
-    echo $success_msg;
-    session_destroy();
     include("../../controls/staff/login-validator.php");
-
 ?>
 
 <!DOCTYPE html>
@@ -24,10 +18,12 @@
                 <tr>
                     <td><label for="email">Email:</label></td>
                     <td><input type="text" name="email" id="email"></td>
+                    <td><?=$_SESSION['email-error']?></td>
                 </tr>
                 <tr>
                     <td><label for="password">Password:</label></td>
                     <td><input type="password" name="password" id="password"></td>
+                    <td><?=$_SESSION['password-error']?></td>
                 </tr>
                 <tr>
                     <td>
